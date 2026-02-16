@@ -1,40 +1,38 @@
+# Autonomous Pentesting Agents with Local LLMs
+
+Welcome to this course on building your own **autonomous security‑testing agent** powered by a **local Large Language Model (LLM)**.  
+The goal of this project is to teach you how to design, train, deploy, and run an autonomous agent capable of performing controlled pentesting tasks while maintaining full data privacy and offline execution.
+
 ---
-layout: default
+
+## Introduction
+
+Autonomous agents are systems capable of making decisions, planning actions, and executing tasks without continuous human intervention. When combined with a **local LLM**, these agents can analyze environments, generate hypotheses, execute commands, and iterate on results in a closed feedback loop.
+
+This course focuses on a **single‑connection architecture**, where the agent interacts with a **local LLM running on Ollama**. This architecture ensures:
+
+- Full data privacy (no external API calls)  
+- Low latency  
+- High control over model behavior  
+- Reproducible and isolated execution  
+- Compatibility with containerized environments (Docker)  
+
+The agent runs inside a **Docker container**, while the LLM runs locally on the host machine through Ollama. The agent communicates with the LLM through a single HTTP endpoint, and can **execute OS commands and actions instructed by the LLM**, closing the loop between reasoning and real system interaction.
+
 ---
 
+## Architecture Diagram
 
-El presente repositorio, ha nacido del siguiente modo:
+![Architecture Diagram](./assets/images/architecture-dark.png)
 
-```
-Tengo capacidades tecnicas en pententing, que no puedo ni ejecutar ni utilizar en entornos reales empresariales.
-Por mi falta de conocimeintos sobre sistemas de seguridad a nivel software EDRs/AVs
-Ya que estos, limitan mis posibilidades de interacción con el Sistem Operativo.
-```
 
-El lenguaje utilizado será el castellano:
-
-```
-Es mi idioma nativo, con el que mejor me expreso y quiero que se entienda con claridad intentando aportar calidad al contenido.
-```
-
-Mis agradecimientos a sektor7 que realiza una formación de calidad, así como a los diversos profesores que he tenido tanto universitarios, como de Masters y certificaciones, por ofrecerme los conocimientos que he ido adquiriendo progresivamente durante años de Sistemas y Software para enfrentarme a este reto con "Garantias", asi que ya lo  iremos viendo.
-
-## Indice
-  1. [Binarios en windows](./Binario_windows.html)
-  2. [Almacenado de payloads (Droppers)](./Droppers_codigo.html)
-  3. [Obfuscacion y encriptacion](./Obfuscacion_encriptacion.html)
-  4. [Otros binarios ejecutables: EXE vs DLL](./exe_vs_dll.html)
-  5. [Técnicas de inyección de código](./injection_types.html)
-  6. [EDRs I](./EDRs.html)
-  7. [EDRs II](./EDRS_deeper.html)
-  8. [Crowdstrike Process Injection bypass](./Crowdstrike_bypass1_0.html)
-  9. [DLL Refectivas](./DLL_reflectivas.html)
-  10. [DLL Injection](./DLL_injection.html)
-  11. [DLL Injection Project](./DLL_injection_project.html)
-
-## Detections And bypass table
-
-| Code Type  | Windows Defender Bypass | AV Bypass | EDR Bypass |
-| ------------- | ------------- | ------------- | ------------- |
-| EXE Crear tabla con todas las inyecciones del blog | False | Flase | False |
-| DLL Crear tabla con todas las inyecciones del blog | False | Flase | False |
+### 1. [Installing Ollama on Linux](./install-ollama-linux.md) 
+### 2. [Searching for Local Models](./search-local-models.md) 
+#### 2.1 [Running the Model on a Local Web Interface](./run-model-web.md) 
+### 3. Training Your Agent 
+ - **3.1 [Defining the Agent’s Objective](./agent-objective.md)** 
+ - **3.2 [Creating the Dataset](./dataset-creation.md)** 
+ - **3.3 [Training the Model](./model-training.md)** 
+ - **3.4 [Creating and Running the Model in Ollama](./ollama-custom-model.md)** 
+### 4. [Building the Agent Inside a Docker Image](./docker-agent.md) 
+### 5. [Testing, Execution, and Improvements](./testing-and-improvements.md)

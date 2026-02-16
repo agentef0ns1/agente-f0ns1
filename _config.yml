@@ -1,5 +1,5 @@
-title: Bypaseando mis limitaciones
-description: El blog se centra en el aprendizaje del desarrollo de malware con el objetivo final de realizar bypass de un EDR
+title: How to train your model "Pentester"
+description: This blog focuses on the process of studying and training an LLM AI Model locally, for the use of an autonomous agent, associated with a specific task.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
