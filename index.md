@@ -26,13 +26,35 @@ The agent runs inside a **Docker container**, while the LLM runs locally on the 
 ![Architecture Diagram](./assets/images/Local-architecture.png)
 
 
-### 1. [Installing Ollama on Linux](./install-ollama-linux.md) 
-### 2. [Searching for Local Models](./search-local-models.md) 
-  - #### 2.1 [Running the Model on a Local Web Interface](./run-model-web.md) 
-### 3. Training Your Agent 
-  - #### **3.1 [Defining the Agent’s Objective](./agent-objective.md)** 
-  - #### **3.2 [Creating the Dataset](./dataset-creation.md)** 
-  - #### **3.3 [Training the Model](./model-training.md)** 
-  - #### **3.4 [Creating and Running the Model in Ollama](./ollama-custom-model.md)** 
-### 4. [Building the Agent Inside a Docker Image](./docker-agent.md) 
-### 5. [Testing, Execution, and Improvements](./testing-and-improvements.md)
+## Index content
+
+### 📂 1. Fundamentals & Environment Setup
+* [**1.1 Installing Ollama on Linux**](./install-ollama-linux.md)
+    * *Setting up the backend engine for local LLM execution.*
+* [**1.2 Searching for Local Models**](./search-local-models.md)
+    * *Selection criteria for base models (Qwen, Llama, etc.).*
+* [**1.3 Running the Model on a Local Web Interface**](./run-model-web.md)
+
+---
+
+### 🧠 2. Training Lifecycle (Fine-Tuning)
+* **2.1 Mission Design**
+    * [Defining the Agent’s Objective](./agent-objective.md) — *System prompts and scope.*
+* **2.2 Data Engineering**
+    * [Creating the Dataset](./dataset-creation.md) — *Cleaning and formatting instructions in JSONL.*
+* **2.3 Training & Optimization**
+    * [Training the Model](./model-training.md) — *Using Unsloth and hyperparameter tuning.*
+    * [Creating and Running the Model in Ollama](./ollama-custom-model.md) — *GGUF conversion and Modelfile setup.*
+
+---
+
+### 📦 3. Deployment & Runtime Environment
+* [**3.1 Building the Agent Inside a Docker Image**](./docker-agent.md)
+
+---
+
+### 🛠️ 4. Quality Assurance & Refinement
+* [**4.1 Testing, Execution, and Improvements**](./testing-and-improvements.md)
+    * *Validating generated Nmap commands and fixing hallucinations.*
+
+---
