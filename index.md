@@ -23,16 +23,16 @@ The agent runs inside a **Docker container**, while the LLM runs locally on the 
 
 ## Architecture Diagram
 
-![Architecture Diagram](./assets/images/architecture-dark.png)
+![Architecture Diagram](./assets/images/Local-architecture.png)
 
 
 ### 1. [Installing Ollama on Linux](./install-ollama-linux.md) 
 ### 2. [Searching for Local Models](./search-local-models.md) 
-#### 2.1 [Running the Model on a Local Web Interface](./run-model-web.md) 
+  - #### 2.1 [Running the Model on a Local Web Interface](./run-model-web.md) 
 ### 3. Training Your Agent 
- - **3.1 [Defining the Agent’s Objective](./agent-objective.md)** 
- - **3.2 [Creating the Dataset](./dataset-creation.md)** 
- - **3.3 [Training the Model](./model-training.md)** 
- - **3.4 [Creating and Running the Model in Ollama](./ollama-custom-model.md)** 
+  - #### **3.1 [Defining the Agent’s Objective](./agent-objective.md)** 
+  - #### **3.2 [Creating the Dataset](./dataset-creation.md)** 
+  - #### **3.3 [Training the Model](./model-training.md)** 
+  - #### **3.4 [Creating and Running the Model in Ollama](./ollama-custom-model.md)** 
 ### 4. [Building the Agent Inside a Docker Image](./docker-agent.md) 
 ### 5. [Testing, Execution, and Improvements](./testing-and-improvements.md)
